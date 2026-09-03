@@ -1,0 +1,22 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local drafts / secrets (never publish)
+.env
+.env.*
+*.pem
+drafts/
+*.local.md
+memory/
+evals/
