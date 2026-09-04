@@ -2,7 +2,6 @@
 
 简体中文 | [English](README.en.md)
 
-
 从 Gmail 订阅邮件整理出一份值得读的晨报和晚报，不必一封封点开阅读，也不会错过重要信息。
 
 适用于能读写本地文件并执行命令的 AI Agent，如 Claude Code、Codex、Cursor、Grok Bot 等。

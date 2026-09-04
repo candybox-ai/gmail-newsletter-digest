@@ -2,7 +2,6 @@
 
 [简体中文](README.md) | English
 
-
 **Gmail Newsletter Digest** — turns newsletters already in your Gmail inbox into a morning and evening digest worth reading, so you don't have to open every message one by one or miss what matters.
 
 Works with any AI agent that can read and write local files and run commands, such as Claude Code, Codex, Cursor, and Grok Bot.
