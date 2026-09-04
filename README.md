@@ -1,4 +1,4 @@
-# 订阅邮件精选（gmail-newsletter-digest）
+# 订阅邮件精选
 
 简体中文 | [English](README.en.md)
 

@@ -1,4 +1,4 @@
-# gmail-newsletter-digest
+# Gmail Newsletter Digest
 
 [简体中文](README.md) | English
 
