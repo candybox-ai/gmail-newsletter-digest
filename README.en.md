@@ -1,6 +1,6 @@
 # Gmail Newsletter Digest
 
-[简体中文](README.md) | English
+[简体中文](README.md) | English | [日本語](README.ja.md)
 
 **Gmail Newsletter Digest** — turns newsletters already in your Gmail inbox into a morning and evening digest worth reading, so you don't have to open every message one by one or miss what matters.
 
