@@ -1,6 +1,7 @@
 # 订阅邮件精选（gmail-newsletter-digest）
 
-> English: [README.en.md](README.en.md)
+简体中文 | [English](README.en.md)
+
 
 从 Gmail 订阅邮件整理出一份值得读的晨报和晚报，不必一封封点开阅读，也不会错过重要信息。
 
