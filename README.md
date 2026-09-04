@@ -1,8 +1,8 @@
-# email-subscription-digest
+# 订阅邮件精选（gmail-newsletter-digest）
 
 > English: [README.en.md](README.en.md)
 
-**邮件订阅精选** — 从 Gmail 订阅邮件整理出一份值得读的晨报和晚报，不必一封封点开阅读，也不会错过重要信息。
+从 Gmail 订阅邮件整理出一份值得读的晨报和晚报，不必一封封点开阅读，也不会错过重要信息。
 
 适用于能读写本地文件并执行命令的 AI Agent，如 Claude Code、Codex、Cursor、Grok Bot 等。
 
@@ -15,7 +15,7 @@
 ### 方式一：发给 Agent（需支持从 GitHub 安装 skill）
 
 ```text
-请安装 email-subscription-digest：https://github.com/candybox-ai/email-subscription-digest
+请安装 gmail-newsletter-digest：https://github.com/candybox-ai/gmail-newsletter-digest
 ```
 
 若不支持该安装方式，请使用方式二。
@@ -25,7 +25,7 @@
 将仓库克隆到**当前工具实际使用的 skills 目录**。例如 Claude Code 常见路径为：
 
 ```bash
-git clone https://github.com/candybox-ai/email-subscription-digest.git ~/.claude/skills/email-subscription-digest
+git clone https://github.com/candybox-ai/gmail-newsletter-digest.git ~/.claude/skills/gmail-newsletter-digest
 ```
 
 Cursor、Codex、Grok Bot 等请查阅各自文档中的 skill / workflow 路径后克隆到对应目录。

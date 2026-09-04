@@ -1,8 +1,8 @@
-# email-subscription-digest
+# gmail-newsletter-digest
 
 > 中文：[README.md](README.md)
 
-**Email Subscription Digest** — turns your Gmail newsletter subscriptions into a morning and evening digest worth reading, so you don't have to open every message one by one or miss what matters.
+**Gmail Newsletter Digest** — turns newsletters already in your Gmail inbox into a morning and evening digest worth reading, so you don't have to open every message one by one or miss what matters.
 
 Works with any AI agent that can read and write local files and run commands, such as Claude Code, Codex, Cursor, and Grok Bot.
 
@@ -15,7 +15,7 @@ People who subscribe to a lot of newsletters and don't have time to read every o
 ### Option 1: Send this to your agent (requires support for installing skills from GitHub)
 
 ```text
-Please install email-subscription-digest: https://github.com/candybox-ai/email-subscription-digest
+Please install gmail-newsletter-digest: https://github.com/candybox-ai/gmail-newsletter-digest
 ```
 
 If your tool doesn't support this, use Option 2.
@@ -25,7 +25,7 @@ If your tool doesn't support this, use Option 2.
 Clone the repository into **the skills directory your tool actually uses**. For Claude Code, that is commonly:
 
 ```bash
-git clone https://github.com/candybox-ai/email-subscription-digest.git ~/.claude/skills/email-subscription-digest
+git clone https://github.com/candybox-ai/gmail-newsletter-digest.git ~/.claude/skills/gmail-newsletter-digest
 ```
 
 For Cursor, Codex, Grok Bot, and others, check their documentation for the skill / workflow path and clone there.

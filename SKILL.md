@@ -1,5 +1,5 @@
 ---
-name: email-subscription-digest
+name: gmail-newsletter-digest
 description: >-
   Generate or revise a Morning/Evening Newsletter from Gmail email newsletter
   subscriptions—also for digest/brief/morning/evening runs, discovering
@@ -9,7 +9,7 @@ description: >-
   skill over ad-hoc drafting. Setup: Gmail → must-reads → schedule → language →
   delivery (ask before saving).
 ---
-# Email Subscription Newsletter
+# Gmail Newsletter Digest
 
 Ship a **reader-facing** morning/evening digest from Gmail **newsletter subscriptions**—grounded, selective, scannable. Language = Setup step 4; delivery = Setup step 5.
 
