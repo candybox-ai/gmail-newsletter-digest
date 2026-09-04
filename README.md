@@ -65,3 +65,7 @@ Cursor、Codex、Grok Bot 等请查阅各自文档中的 skill / workflow 路径
 ## License
 
 MIT — 见 [LICENSE](LICENSE)。
+
+## 致谢
+
+本仓库由 Grok Bot 协助发布与整理。

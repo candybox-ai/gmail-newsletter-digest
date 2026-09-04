@@ -65,3 +65,7 @@ The skill only reads your subscription mail and, if you turn on email delivery, 
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+## Credits
+
+Published with assistance from Grok Bot.
