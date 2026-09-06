@@ -118,10 +118,19 @@ def check(text: str) -> list[str]:
     if len(parts) > 3:
         errs.append(f"{pack['deep']} has {len(parts)} items; usually ≤3")
     for i, p in enumerate(parts, 1):
-        if pack["insight"] not in p:
-            errs.append(f"{pack['deep']} #{i} missing {pack['insight']}")
-        if pack["sources"] not in p:
-            errs.append(f"{pack['deep']} #{i} missing {pack['sources']}")
+        # Labeled field required — bare "Insightful" / "洞察力" must not count.
+        if pack["insight"] == "Insight":
+            ok_i = bool(re.search(r"(?m)^\*\*Insight:\*\*\s*\S", p))
+        else:
+            ok_i = bool(re.search(r"(?m)^\*\*洞察[：:]\*\*\s*\S", p))
+        if not ok_i:
+            errs.append(f"{pack['deep']} #{i} missing **{pack['insight']}:** label")
+        if pack["sources"] == "Sources":
+            ok_s = bool(re.search(r"(?m)^\*\*Sources:\*\*\s*\S", p))
+        else:
+            ok_s = bool(re.search(r"(?m)^\*\*来源[：:]\*\*\s*\S", p))
+        if not ok_s:
+            errs.append(f"{pack['deep']} #{i} missing **{pack['sources']}:** label")
 
     # More to Read: required subsection names for the language pack
     more_block = section_body(text, pack["more"]) or ""

@@ -1,17 +1,18 @@
 # Acceptance checklist (read before delivering a draft)
 
 ## Setup gate
+### Hard gate (required before any generate)
 - [ ] Step 1 succeeded: Gmail connected and readable for the correct account (read/search only during Setup)
-- [ ] Step 2 succeeded: candidates scanned from **this** mailbox over the last **2–3 weeks** (not 3–4+ unless asked), shown as cadence groups + numbered lists (no per-issue clutter), user chose must-reads, saved
-- [ ] Step 3: schedule confirmed with the user before creating/updating automations (or user chose generate-on-ask only)
-- [ ] Step 4: newsletter language proposed from majority of must-read content, user accepted or overrode, saved
-- [ ] Step 5 (last): digest recipient saved (or user chose chat-only / no email); address confirmed once before lock
-- [ ] If steps 1–2 failed: do not generate; point user back to Setup
+- [ ] Step 2 succeeded: Reader profile locked (role, focus, demote; optional job-of-digest)—examples offered; saved to memory (not invented silently)
+- [ ] Step 3 succeeded: candidates scanned from **this** mailbox over the last **2–3 weeks** (not 3–4+ unless asked), shown as cadence groups + numbered lists (no per-issue clutter); Suggested subset weighted by Reader; user confirmed final must-reads (**no auto-select**), saved
+- [ ] If steps 1–3 failed: do not generate; point user back to Setup
 
-## Gmail mutation ban
-- [ ] No create/edit/forward/reply/trash/spam/sensitive-label on mail except sanctioned digest send
-- [ ] No `create_draft` / `update_draft` for this workflow
-- [ ] Intake used read/search/get only
+### Language (required for every draft)
+- [ ] Newsletter language locked, or an explicit one-off override for this draft (from Setup step 4 language half, or majority-of-intake estimate stated to the user)
+
+### Unattended / email only (not required for chat-only one-offs)
+- [ ] Step 4 schedule: confirmed for timed runs, **or** generate-on-ask only (skip creating automations for a one-off)
+- [ ] Step 5: digest recipient locked **before any email send**, **or** user chose chat-only / no email
 
 ## Language
 - [ ] Draft uses the locked newsletter language (or an explicit one-off override)
@@ -19,7 +20,7 @@
 - [ ] Chat with the user may stay in their preferred language; body language is separate
 
 ## Structure
-- [ ] Title is exactly `YYYY-MM-DD · Morning Newsletter` or `… · Evening Newsletter`
+- [ ] Body title line is exactly `# YYYY-MM-DD · Morning Newsletter` or `# … · Evening Newsletter` (leading `#`); email `subject` = same text **without** `#`
 - [ ] Sections: Brief → Deep Dives → Engineering & Tools (optional) → More to Read
 - [ ] No Subject / sources appendix / editor notes / coverage-window / layout notes in the body
 - [ ] More to Read only has items not expanded in Deep Dives (no URL overlap with Deep Dives Sources)
@@ -28,8 +29,9 @@
 
 ## Selection
 - [ ] Intake used only the saved must-read set
-- [ ] Deep Dives is 1–3 high-impact items only (not a Brief rehash)
-- [ ] Mid-tier news stayed in Brief / More to Read
+- [ ] Ranking used locked Reader profile (role/focus/demote)—not a hardcoded persona
+- [ ] Deep Dives is 1–3 high-impact items only (not a Brief rehash); Insight leads with bottom-line takeaway
+- [ ] Mid-tier news stayed in Brief / More to Read; locked demote types (e.g. M&A theater) not forced into Deep Dives
 - [ ] Same-event angles attributed when they differ; same angle not duplicated
 
 ## Linking

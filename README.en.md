@@ -22,7 +22,13 @@ If your tool doesn't support this, use Option 2.
 
 ### Option 2: Command line
 
-Clone the repository into **the skills directory your tool actually uses**. For Claude Code, that is commonly:
+Requires Node.js:
+
+```bash
+npx skills add candybox-ai/gmail-newsletter-digest
+```
+
+Or clone into **the skills directory your tool actually uses**. For Claude Code, that is commonly:
 
 ```bash
 git clone https://github.com/candybox-ai/gmail-newsletter-digest.git ~/.claude/skills/gmail-newsletter-digest
@@ -39,16 +45,19 @@ Once installed, just ask your agent, for example:
 - Make today's morning digest from my email subscriptions
 - Build an evening digest in English and send it to the address where I usually receive it
 - Connect Gmail first, then help me pick which newsletters are must-reads
+- I'm an AI product manager; focus on Agents; keep industry M&A in the brief only (Reader profile example)
 
 ## Quick start
 
 On first use, complete Setup in order, confirming each step before moving on:
 
 1. **Connect Gmail** — authorize reading subscription mail from the chosen Gmail account
-2. **Pick must-reads** — select the newsletters to track from recent mail and save the list
-3. **Set the schedule** — confirm the time and timezone for the morning / evening digest
-4. **Choose the language** — set the language used in the digest body
+2. **Set Reader profile** — role/job, current focus, and what to demote or skip by default (the agent offers 2–3 example answers; this shapes must-read suggestions)
+3. **Pick must-reads** — select newsletters to track from recent mail; Suggested is weighted by Reader, final list is yours to confirm
+4. **Set schedule and language** — in the same step, confirm morning / evening time and timezone, plus the digest body language
 5. **Set delivery** — delivered in chat by default; you can also specify a recipient address
+
+For a one-off digest in chat: finish steps 1–3 and set the body language (use the locked language if set, or estimate from the subscriptions). Timed runs and email delivery can wait until you need them.
 
 ## Requirements
 
@@ -58,7 +67,7 @@ On first use, complete Setup in order, confirming each step before moving on:
 
 ## Privacy
 
-Your must-read list, language, recipient address, and other preferences are stored in **the environment running your agent** (your machine, or the cloud workspace you use). This repository itself collects none of that data.
+Your must-read list, Reader profile (role/focus/demote preferences), language, recipient address, and other preferences are stored in **the environment running your agent** (your machine, or the cloud workspace you use). This repository itself collects none of that data.
 
 The skill only reads your subscription mail and, if you turn on email delivery, sends the finished digest. It never forwards, deletes, or modifies anything in your mailbox.
 
