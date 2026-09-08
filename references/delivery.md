@@ -4,10 +4,18 @@ No extra skill mailer. Use the user’s **Gmail connector** (`send_message` only
 
 ## Mutation ban
 
-Default: never create/edit/send/forward/reply/trash/spam mail.  
-**Only allowed write:** finished validated digest → locked recipient.
+Default: never create/edit/send/forward/reply/trash/spam mail.
 
-Forbidden: `create_draft`, `update_draft`, other `send_message`, `forward`, `reply`, `trash_*`, `mark_*spam`, browser compose, SMTP.
+**Allowed writes only:**
+1. Finished validated digest → locked recipient via `send_message`.
+2. After a must-read / in-scope message is **successfully retrieved** for this run's
+   intake inventory, mark that message read: remove system label `UNREAD` with
+   `unlabel_message` (`labelIds: ["UNREAD"]`) or `update_message_labels`
+   (`removeLabelIds: ["UNREAD"]`). Message-scoped only—do not clear unread for the
+   whole mailbox or for messages that failed to load. Already-read mail is a no-op.
+
+Forbidden: `create_draft`, `update_draft`, other `send_message`, `forward`, `reply`,
+`trash_*`, `mark_*spam`, adding/removing unrelated labels, browser compose, SMTP.
 
 ## Send steps
 

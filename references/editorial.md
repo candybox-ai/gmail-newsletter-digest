@@ -1,68 +1,84 @@
-# Editorial, prose, collaboration
+# Information preservation and writing
 
-## Reader (from Setup step 2 — not hardcoded)
+## Importance
 
-Load the locked **Reader profile** from agent memory (role, focus, demote, job-of-digest).  
-If missing: do not invent a persona; for unattended runs refuse and point to `references/setup.md` step 2. For a one-off chat generate, ask step 2 briefly first.
+Coverage is the confirmed subscriptions and intake window. Important information
+includes material new facts, changes, launches, prices/terms, deadlines, risks,
+limitations, counterevidence, corrections and meaningful follow-ups. Include
+practical methods with substantive reusable detail.
 
-**Primary question for every item** (fill with their role/focus):  
-“Would this reader change a decision, a build method, a tool/model choice, or a skill to practice because of this?”
+Topic alone never justifies omission: M&A, funding, benchmarks and policy can
+all matter. No occupation filter or immediate-action requirement applies.
+Optional preferences affect order/depth only. When importance is uncertain,
+retain a concise, qualified update.
 
-Formula: `must-read pool × Reader profile × this framework` → Brief / Deep Dive / More / drop.
+## Inventory before drafting
 
-## Selection
+For each read email record source message ID, publisher/date and independent
+information points, including facts below the main headline. Keep the inventory
+beside the draft in the host's private area, outside the public skill repository.
 
-**Include / elevate** (interpret through Reader focus):
-- New facts/angles that hit the locked focus and are verifiable
-- Practices the reader can copy (frameworks, checklists, shipping loops)—prefer “how” over “wow”
-- Capability or product moves that change what they should do next
+Each point records claim/evidence, importance/reason, material numbers/dates/
+conditions/risks, and disposition: expanded, update, merged, or omitted with reason.
+Retained points name a destination heading/item; merged points identify where
+their unique facts survive. Each email has points or a no-substantive-information reason.
 
-**Demote to Brief / More to Read (or drop)** — apply locked demote list first; also by default:
-- Industry mega-deals / M&A: **Brief only** unless they clearly change the reader’s toolchain, entry points, or day-to-day work
-- Pure capital markets / valuation theater / celebrity quotes with no product implication
-- Benchmark archaeology without a one-line takeaway for this reader
-- Promo, same-angle dupes, already-covered with no new angle, empty slogans, schedule meta, tool-list noise
+Omit only non-substantive promotion/boilerplate, duplicates whose facts survive
+elsewhere, or non-important material with a recorded reason. Missing public URLs
+are not a reason to drop important facts grounded in retrieved emails.
 
-**Unsure:** More to Read / engineering—never force into Deep Dives.  
-**Dedup:** one through-line per event; keep distinct angles with attribution; same angle → best wording.  
-**Deep Dives:** usually **1–3 high-impact** only—not a Brief rehash. Mid-tier stays in Brief / More to Read.  
-**Deep Dive bar:** must pass the primary question. After drafting: one-sentence self-check — “what does this reader change?” If blank → demote or rewrite the Insight.  
-**More to Read:** language-pack subsection names only (`Don't miss`/`Worth a look` or `非读不可`/`推荐读`); must not repeat URLs already in Deep Dives (`validate_newsletter.py` checks).  
-**Tools:** ≤5; official link + Best for; plain labels; prefer tools this reader would actually try.  
-Learn short craft from source newsletters themselves.
+## Merge without losing facts
 
-## Writing craft (remix → final text)
+Combine the same event/angle while preserving material numbers, deadlines,
+eligibility, limitations, risks and disagreements. Different facts may share a
+source URL; deduplicate facts rather than URLs or whole emails.
+Explain corrections to earlier reporting. Attribute uncertain source assertions
+instead of presenting them as established facts.
 
-Raw intake is fixed by must-reads; the model’s job is **remix into scannable text**, not dump the mail. (Pattern borrowed from follow-builders’ remix prompts—not their multi-channel sources.)
+## Allocate space
 
-**Pipeline mindset**
-1. Ground only in retrieved mail/pages (no invention; no URL → omit).
-2. Remix per item, then assemble Brief → Deep Dives → Tools → More.
-3. Prefer counterintuitive / specific / actionable; skip generic wisdom and fluff.
+- Brief: 1–2 sentences per headline, with takeaway; source links allowed.
+- Deep Dives: 0–3 items needing context, usually 1–3 when warranted. Include
+  bottom-line meaning, 2–4 supports, Insight and Sources.
+- Important Updates: all important points not expanded elsewhere. Include facts,
+  implications, caveats and sources. No count cap. Use one bullet per update.
+- Engineering & Tools: optional, at most five expanded picks with purpose and
+  official link. Additional important tool news belongs in Important Updates.
+- More to Read: optional-value items in Don't miss / Worth a look; can be empty.
 
-**Brief**  
-Each bullet = **1–2 sentences** that already contain the takeaway. No links. No “某刊报道称…” wrapping.
+Every important point must survive in Deep Dives, Important Updates or Tools,
+not only Brief/More. Expansion limits never limit important-information inclusion.
+If output limits prevent completion, report incomplete delivery and arrange
+continuation; do not call a partial digest complete or advance success state.
 
-**Deep Dives** — bottom-line first
-1. First line of body or **Insight** must answer: what should this reader *do or watch* differently?
-2. Then context + 2–4 specific supports (numbers OK if attributed).
-3. Prefer one memorable concrete detail or quote over jargon archaeology.
-4. Write as a standalone briefing—avoid “本文 / 这封邮件 / 在这篇报道中”.
-5. Translate specialist jargon into language this reader can use.
-6. Tone: sharp colleague, not press-release or paper.
+## Coverage check
 
-**Tools**  
-Name + what it does for this reader’s workflow + Best for + official link.
+Re-read original emails against the inventory, then inventory against the draft.
+Every important point has a destination retaining its key facts and caveats.
+Check merged points individually and resolve omissions before delivery.
+This is semantic agent review; Python format checks cannot detect unextracted facts.
 
-**Prose language**  
-Natural prose in the locked newsletter language; keep common EN tech terms where professionals keep them; keep proper nouns in English; no translationese.
 
-## Numbers & prose
+## Default style (ships with the skill)
 
-- Ground every claim; never invent. Secondhand figures OK if needed and attributed.
-- Concise, natural prose; avoid opaque jargon.
-- Name rankings in full; explain scores in reader language (what to check)—not eval dumps.
+Use this until the user saves presentation preferences. Keep it role-agnostic—
+do not assume a job title or industry.
 
-## Collaboration
+- Scannable: short paragraphs; one idea per Brief / Important Updates bullet.
+- Insight / 洞察 leads with the bottom-line takeaway the reader can use, then
+  supporting detail in the body.
+- Keep material numbers, dates, deadlines, and conditions; attribute secondhand
+  figures.
+- Natural prose in the locked language; plain wording over jargon or translationese.
+- Prefer concrete product/engineering/practice detail over empty slogans.
+- Deep Dives stay selective (0–3); everything else important goes to Important
+  Updates—not omitted.
 
-Teammate suggestions: apply clear non-conflicting wins and say what changed; contested overrides → ask first. Keep collaboration notes out of the newsletter body.
+User preferences may re-order or deepen themes; they must not delete important
+points that belong in Deep Dives, Important Updates, or Tools.
+
+## Prose and sources
+
+Natural English/Chinese, concise sentences, attributed numbers, meaningful
+uncertainty and plain jargon explanations. Follow linking.md for sources, including
+restricted access citations. Keep the audit and collaboration notes out of email.

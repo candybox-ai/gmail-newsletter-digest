@@ -14,6 +14,11 @@ Lead with what happened, the numbers, and what they mean.
 
 **Sources:** [article](https://example.com/article) · [mail](https://mail.google.com/mail/u/0/#inbox/MESSAGE_ID)
 
+## Important Updates
+
+- **Deadline changed.** Include the new date, affected users, and necessary caveats. [Source](https://example.com/update)
+- **Email-only change.** Preserve the material detail with attribution. Publisher · 2026-09-03 · [Restricted source] — original requires mailbox access.
+
 ## Engineering & Tools
 
 ### Tool picks

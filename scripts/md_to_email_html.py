@@ -49,15 +49,20 @@ CODE = (
 
 
 def inline_md(s: str) -> str:
+    # Protect links while formatting text so emphasis markers never touch hrefs.
+    links: list[str] = []
+    def link_repl(m: re.Match[str]) -> str:
+        label, url = m.group(1), m.group(2)
+        links.append(f'<a href="{html.escape(url, quote=True)}" style="{A}">{html.escape(label)}</a>')
+        return f"\x00{len(links) - 1}\x00"
+    raw = s
+    pattern = re.compile(r"\[([^\]]+)\]\((https?://(?:[^()\s]|\([^()]*\))+)\)")
+    s = pattern.sub(link_repl, raw)
     s = html.escape(s)
-    s = re.sub(
-        r"\[([^\]]+)\]\((https?://[^)\s]+)\)",
-        rf'<a href="\2" style="{A}">\1</a>',
-        s,
-    )
     s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
     s = re.sub(r"(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)", r"<em>\1</em>", s)
     s = re.sub(r"`([^`]+)`", rf'<code style="{CODE}">\1</code>', s)
+    s = re.sub(r"\x00(\d+)\x00", lambda m: links[int(m.group(1))], s)
     return s
 
 
