@@ -20,3 +20,8 @@ drafts/
 *.local.md
 memory/
 evals/
+
+# Local-only eval / regression helpers (not published)
+references/coverage-scenarios.md
+scripts/test_newsletter.py
+scripts/test_preservation.py
